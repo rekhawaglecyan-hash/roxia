@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -12,18 +14,18 @@ export default function Home() {
               verified guides. Seamless booking, secure payments, unforgettable experiences.
             </p>
             <div id="cta" className="mt-8 flex gap-3">
-              <a
+              <Link
                 href="#offerings"
                 className="rounded-full bg-[#0e7490] text-white px-5 py-3 text-sm font-medium hover:opacity-90"
               >
                 Browse Offerings
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#features"
                 className="rounded-full border border-black/10 dark:border-white/15 px-5 py-3 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/5"
               >
                 Why Roxia
-              </a>
+              </Link>
             </div>
           </div>
           <div className="aspect-video rounded-xl bg-[radial-gradient(circle_at_30%_20%,#0ea5e9_0%,transparent_30%),radial-gradient(circle_at_70%_60%,#0e7490_0%,transparent_35%)] border border-black/10 dark:border-white/10" />

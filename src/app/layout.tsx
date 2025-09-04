@@ -67,16 +67,16 @@ export default function RootLayout({
               Roxia
             </Link>
             <nav className="hidden sm:flex gap-6 text-sm">
-              <a href="#offerings" className="hover:underline">Offerings</a>
-              <a href="#features" className="hover:underline">Why Roxia</a>
-              <a href="#contact" className="hover:underline">Contact</a>
+              <Link href="#offerings" className="hover:underline">Offerings</Link>
+              <Link href="#features" className="hover:underline">Why Roxia</Link>
+              <Link href="#contact" className="hover:underline">Contact</Link>
             </nav>
-            <a
+            <Link
               href="#cta"
               className="rounded-full bg-[#0e7490] text-white px-4 py-2 text-sm font-medium hover:opacity-90"
             >
               Book a Guide
-            </a>
+            </Link>
           </div>
         </header>
         <main>{children}</main>
@@ -91,8 +91,8 @@ export default function RootLayout({
             <div>
               <div className="font-medium">Company</div>
               <ul className="mt-2 space-y-1 opacity-90">
-                <li><a href="#features" className="hover:underline">Why Roxia</a></li>
-                <li><a href="#offerings" className="hover:underline">Offerings</a></li>
+                <li><Link href="#features" className="hover:underline">Why Roxia</Link></li>
+                <li><Link href="#offerings" className="hover:underline">Offerings</Link></li>
               </ul>
             </div>
             <div>
